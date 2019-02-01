@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Abraham's Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
 </head>
+
 <body>
     <div id="container">
         <header>
-            <h1>Abraham Post's Portfolio</h1>
+            <img class="pic" src="static/abe.jpg">
+            <h1 class="title">Abraham Post's Portfolio</h1>
         </header>
+        <aside class="side-panel left">
+            <section>
+                <h2><u>Personal Links</u></h2>
+                <a class="link" href="https://github.com/abrahampost"><i class="fab fa-github"></i>Github</a>
+                <a class="link" href="https://www.linkedin.com/in/abraham-post/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a class="link" href="http://www.abrahamposts.com"><i class="fas fa-blog"></i>Blog</a>
+                <a class="link" href="static/Abraham Post Resume.pdf"><i class="fas fa-file"></i>Resume</a>
+            </section>
+        </aside>
         <div id="main">
-            <div class="side-panel empty">
-            </div>
             <div id="content">
                 <nav>
                     <a href="#main">Home</a>
                 </nav>
                 <h2>My Portfolio</h2>
-                <p>This website will be used to display some of my personal projects, showcase my web development skills, and display my resume.</p>
+                <p>This website will be used to display some of my personal projects, showcase my web development
+                    skills, and display my resume.
+                </p>
+                <p>I have a passion for programming and creating things. I love
+                    the process involved in taking something from an idea, to designs, to implementation.
+                    Web development gives me an opportunity to be creative and share my creations with the world.
+                </p>
+                <p>
+                    I am also interested in programming language design, and computer architecture.
+                </p>
                 <h2>This website is intended for:</h2>
                 <ul>
                     <li>Project partners</li>
@@ -33,20 +54,19 @@
                     <li>Information about me and my interests</li>
                 </ul>
             </div>
-            <div class="side-panel">
-                <aside>
-                    <section>
-                        <h2>About Me</h2>
-                        <p>I am a senior Computer Science B.S. and Political Science B.A. major. I 
-                            am currently getting a minor in Information Science.
-                        </p>
-                    </section>
-                </aside>
-            </div>
         </div>
+        <aside class="side-panel right">
+            <section>
+                <h2>About Me</h2>
+                <p>I am a senior Computer Science B.S. and Political Science B.A. major. I
+                    am currently getting a minor in Information Science..
+                </p>
+            </section>
+        </aside>
         <footer>
             <p>Website created in INLS 572 Web Development taught by Joan Boone</p>
         </footer>
     </div>
 </body>
+
 </html>
