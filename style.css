@@ -166,7 +166,8 @@ a.link i {
     margin-bottom: 1.5em;
     grid-template-areas:
     "link title"
-    "link description";
+    "link description"
+    "image image";
 }
 
 .project .title { 
@@ -185,7 +186,12 @@ a.link i {
     margin: auto;
  }
 
-
+.project .image {
+    grid-area: image;
+    max-width: 100%;
+    margin-top: 1.5em;
+    height: auto;
+}
 
 .fa-github {
     color: #24292e;
