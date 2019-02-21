@@ -6,6 +6,7 @@
     --neutral: #c09f80;
     --link-color: rgb(61, 61, 199);
     --text-color: var(--secondary-color);
+    --shadow: #ada7a7;
 }
 
 html, body {
@@ -110,11 +111,11 @@ footer {
 
 #main {
     background-color: var(--primary-color);
+    height: 100%;
 }
 
 #content {
     width: 60%;
-    height: 100%;
     margin: auto;
 }   
 
@@ -191,6 +192,35 @@ a.link i {
     max-width: 100%;
     margin-top: 1.5em;
     height: auto;
+}
+
+#tldr {
+    border: 2px solid var(--neutral);
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px var(--shadow);
+    padding: 5%;
+    cursor: pointer;
+
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+#tldr .title {
+    font-weight: bold;
+    text-align: center;
+}
+
+#tldr .fas {
+    padding-left: 1em;
+}
+
+.hidden, .fas.hidden {
+    display: none;
 }
 
 .fa-github {
