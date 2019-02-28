@@ -1,0 +1,44 @@
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1;
+    display: grid;
+    border: 3px solid var(--neutral);
+    border-radius: 10px;
+    padding: 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px auto;
+    margin-bottom: 1.5em;
+    grid-template-areas:
+    "link title"
+    "link description"
+    "image image";
+}
+
+.project .title { 
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    grid-area: title;
+    margin: auto;
+}
+.project .description { 
+    grid-area: description;
+    font-size: .8rem;
+}
+.project .link { 
+    grid-area: link;
+    margin: auto;
+ }
+
+.project .image {
+    grid-area: image;
+    max-width: 100%;
+    margin-top: 1.5em;
+    height: auto;
+}

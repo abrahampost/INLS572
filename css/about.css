@@ -1,0 +1,80 @@
+#tldr {
+    border: 2px solid var(--neutral);
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px var(--shadow);
+    padding: 5%;
+}
+
+#tldr .title {
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+#tldr .title:hover {
+    color: var(--link-color);
+}
+
+#tldr .fas {
+    padding-left: 1em;
+}
+
+.hidden, .fas.hidden {
+    display: none;
+}
+
+.fa-github {
+    color: #24292e;
+}
+
+.fa-linkedin {
+    color: #225d7b
+}
+
+.interest {
+    margin-top: 3em;
+    border-bottom: 1px solid var(--neutral);
+}
+
+.interest:last-of-type {
+    border-bottom: none;
+}
+.justified {
+    text-align: justify;
+}
+
+.centered {
+    text-align: center;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+#video-player {
+    text-align: center;
+    width: 100%;
+    border: 1px solid grey;
+}
+
+#pickleball-video {
+    width: 100%;
+}
+
+#video-player #controls {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: .5em;
+}
+
+#video-player .control {
+    flex: 1;
+    cursor: pointer;
+}
+
+#video-player .control:hover {
+    color: var(--link-color);
+}
