@@ -51,13 +51,17 @@
     text-decoration: underline;
 }
 
+#mapid {
+    height: 300px;
+}
+
 #video-player {
     text-align: center;
     width: 100%;
     border: 1px solid grey;
 }
 
-#pickleball-video {
+#video-player #pickleball-video {
     width: 100%;
 }
 

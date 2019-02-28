@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
 </head>
 
 <body>
@@ -41,24 +45,22 @@
                 </div>
                 <div class="interest justified">
                     <h3 class="centered underlined">Biography</h2>
-                    <p>
-                        I was born in Salisbury, NC. I attended Overton Elementary School, Knox Middle School, and
-                        Salisbury High School,
-                        the same three schools my dad attended 38 years before me. I applied to both Carolina and NC State,
-                        but in the easiest
-                        decision of my life decided to attend Carolina. I am a senior Computer Science and Political
-                        Science major, with a minor
-                        in Information Systems.
-                    </p>
+                        <p>
+                            I was born in Salisbury, NC. I attended Overton Elementary School, Knox Middle School, and
+                            Salisbury High School, the same three schools my dad attended 38 years before me. I applied
+                            to both Carolina and
+                            NC State, but in the easiest decision of my life decided to attend Carolina. I am a senior
+                            Computer Science and
+                            Political Science major, with a minor in Information Systems.
+                        </p>
+                        <div id="mapid"></div>
                 </div>
                 <h2 class="centered underlined">Interests</h2>
                 <div class="interest justified">
                     <h3 class="centered">Computer Science</h1>
                         <p>My dad ran a computer store when I was little, so I always grew up with at least a few in my
                             house. I dabbled in programming and web development all throughout my childhood, but really
-                            got
                             the bug when I took AP Computer Science through NCVPS in high school. I decided I wanted to
-                            go to
                             school for Computer Science, and have never regretted that decision for a moment.
                         </p>
                 </div>

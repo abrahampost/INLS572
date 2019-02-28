@@ -42,6 +42,18 @@ function toggleMute() {
     player.muted = !player.muted;
 }
 
+// Initialize the Map
+let mymap = L.map('mapid').setView([35.66510663398735, -80.47045074290746], 10);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiYWJyYWhhbXBvc3QiLCJhIjoiY2pzbzEyaTE3MGkxaTQ0cGdodzZ0aG1heCJ9._ya0wI9rz1rlsPqxE_DIWw'
+}).addTo(mymap);
+
+let marker = L.marker([35.663953, -80.48312]).addTo(mymap);
+marker.bindPopup("<b>Salisbury High School</b><br>Where I attended High School from 2011-2015").openPopup();
+
 // Utility functions
 
 /**
