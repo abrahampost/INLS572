@@ -7,12 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
         crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
         crossorigin=""></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -25,7 +28,8 @@
             <section>
                 <h2><u>Personal Links</u></h2>
                 <a class="link" href="https://github.com/abrahampost"><i class="fab fa-github"></i>Github</a>
-                <a class="link" href="https://www.linkedin.com/in/abraham-post/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a class="link" href="https://www.linkedin.com/in/abraham-post/"><i
+                        class="fab fa-linkedin"></i>LinkedIn</a>
                 <a class="link" href="http://www.abrahamposts.com"><i class="fas fa-blog"></i>Blog</a>
                 <a class="link" href="static/Resume.pdf"><i class="fas fa-file"></i>Resume</a>
             </section>
@@ -40,7 +44,8 @@
                 <h1 class="centered">About</h1>
                 <div id="tldr">
                     <div class="title">TLDR<i class="fas fa-plus"></i><i class="fas fa-minus hidden"></i></div>
-                    <div class="description hidden">From <strong>Salisbury, NC</strong>, Love <strong>Computer Science</strong>,
+                    <div class="description hidden">From <strong>Salisbury, NC</strong>, Love <strong>Computer
+                            Science</strong>,
                         Play <strong>Pickleball</strong> and <strong>Tennis</strong></div>
                 </div>
                 <div class="interest justified">
@@ -54,6 +59,8 @@
                             Political Science major, with a minor in Information Systems.
                         </p>
                         <div id="mapid"></div>
+                        <h3 class="centered">Courses Taken</h3>
+                        <div id="coursework" class="centered"></div>
                 </div>
                 <h2 class="centered underlined">Interests</h2>
                 <div class="interest justified">
@@ -85,6 +92,47 @@
                                 <i id="stop" class="fas fa-stop control"></i>
                                 <i id="mute" class="fas fa-volume-up control"></i>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interest justified">
+                    <h3 class="centered">Tennis</h3>
+                    <p class="justified">
+                        I have played tennis for almost my whole life. My father was a 5.0 tennis player,
+                        and his father was an excellent tennis player back in the day as well. I competed
+                        in USTA tournaments until I was 14, and then played several years of high school tennis.
+                        I put the game down for a few years, but am now picking it back up again with a renewed passion!
+                    </p>
+                    <div class="slide">
+                        <img src="static/tennis-highschool.jpg">
+                        <div class="info">
+                            <button onclick="plusDivs(-1)"><i class="fas fa-chevron-left"></i></button>
+                            <span>A High School Tennis Match</span>
+                            <button onclick="plusDivs(+1)"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="static/tennis-funny.jpg">
+                        <div class="info">
+                            <button onclick="plusDivs(-1)"><i class="fas fa-chevron-left"></i></button>
+                            <span>My Look at a charity tournament</span>
+                            <button onclick="plusDivs(+1)"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="static/all-county.jpg">
+                        <div class="info">
+                            <button onclick="plusDivs(-1)"><i class="fas fa-chevron-left"></i></button>
+                            <span>Made all county my freshman year</span>
+                            <button onclick="plusDivs(+1)"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="static/tennis-results.jpg">
+                        <div class="info">
+                            <button onclick="plusDivs(-1)"><i class="fas fa-chevron-left"></i></button>
+                            <span>Winning regionals my freshmen year</span>
+                            <button onclick="plusDivs(+1)"><i class="fas fa-chevron-right"></i></button>
                         </div>
                     </div>
                 </div>

@@ -23,6 +23,11 @@
     display: none;
 }
 
+#coursework {
+    width: 100%;
+    height: auto;
+}
+
 .fa-github {
     color: #24292e;
 }
@@ -81,4 +86,30 @@
 
 #video-player .control:hover {
     color: var(--link-color);
+}
+
+.slide {
+    border: 1px solid grey;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+.slide .info button {
+    flex: 1;
+    outline: none;
+    margin: 0 5px;
+}
+
+.slide .info span {
+    flex: 6;
 }

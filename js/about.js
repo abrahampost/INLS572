@@ -54,6 +54,58 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 let marker = L.marker([35.663953, -80.48312]).addTo(mymap);
 marker.bindPopup("<b>Salisbury High School</b><br>Where I attended High School from 2011-2015").openPopup();
 
+// Initialize the chart
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Program', 'Hours of Coursework'],
+    ['ASTR', 4],
+    ['CLAS', 3],
+    ['COMM', 3],
+    ['COMP', 40],
+    ['ECON', 3],
+    ['ENGL', 6],
+    ['INLS', 15],
+    ['LFIT', 1],
+    ['MATH', 9],
+    ['POLI', 21],
+    ['SPAN', 7],
+    ['RELI', 3],
+    ['STOR', 6]
+  ]);
+
+  var options = {
+    title: 'Coursework Breakdown'
+  };
+
+  var container = document.querySelector('#coursework');
+  var chart = new google.visualization.PieChart(container);
+
+  chart.draw(data, options);
+}
+
+// W3 slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  if (n > x.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+
 // Utility functions
 
 /**
