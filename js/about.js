@@ -78,7 +78,7 @@ function drawChart() {
   ]);
 
   var options = {
-    title: 'Coursework Breakdown'
+    title: 'Coursework Breakdown by Hour'
   };
 
   var container = document.querySelector('#coursework');
