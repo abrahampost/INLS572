@@ -3,9 +3,9 @@
     --primary-color: #d7cec7;
     --secondary-color: #565656;
     --bright: #76323f;
-    --neutral: #c09f80;
+    --neutral: #cbb096;
     --link-color: rgb(61, 61, 199);
-    --text-color: var(--secondary-color);
+    --text-color: #0f0f0f;
     --shadow: #ada7a7;
 }
 
