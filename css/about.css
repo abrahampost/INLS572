@@ -44,9 +44,6 @@
 .interest:last-of-type {
     border-bottom: none;
 }
-.justified {
-    text-align: justify;
-}
 
 .centered {
     text-align: center;
